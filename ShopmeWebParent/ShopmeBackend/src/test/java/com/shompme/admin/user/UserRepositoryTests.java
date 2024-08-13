@@ -1,6 +1,6 @@
-package com.shompme.admin;
+package com.shompme.admin.user;
 
-import com.shompme.admin.user.UserRepository;
+import com.shompme.admin.user.repository.UserRepository;
 import com.shopme.common.entity.Role;
 import com.shopme.common.entity.User;
 import org.junit.jupiter.api.Test;
@@ -79,5 +79,12 @@ public class UserRepositoryTests {
     public void testDeleteUserById(){
        Integer id = 2;
        userRepository.deleteById(id);
+    }
+    @Test
+    public void testGetUserByEmail(){
+        String email = "pankaj10106@gmail.com";
+        User user = userRepository.getUserByEmail(email);
+
+        assertThat(user).isNotNull();
     }
 }

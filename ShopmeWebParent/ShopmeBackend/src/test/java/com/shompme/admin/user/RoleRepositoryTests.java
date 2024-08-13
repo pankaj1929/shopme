@@ -1,6 +1,6 @@
-package com.shompme.admin;
+package com.shompme.admin.user;
 
-import com.shompme.admin.user.RoleRepository;
+import com.shompme.admin.user.repository.RoleRepository;
 import com.shopme.common.entity.Role;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
